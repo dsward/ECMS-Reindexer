@@ -1,0 +1,19 @@
+<assembly
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+        xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+    <id>${project.version}</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <baseDirectory>Reindexer</baseDirectory>
+    <dependencySets>
+        <dependencySet>
+            <scope>runtime</scope>
+            <excludes>
+                <exclude>${project.groupId}:Installer</exclude>
+            </excludes>
+            <outputFileNameMapping>${artifact.artifactId}.${artifact.extension}</outputFileNameMapping>
+        </dependencySet>
+    </dependencySets>
+</assembly>

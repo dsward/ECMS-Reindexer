@@ -1,0 +1,31 @@
+<config>
+	<args>
+		<configName>
+			<argName>config</argName>
+			<argShortName>c</argShortName>
+			<isFlag>false</isFlag>
+			<required>false</required>
+			<multi>false</multi>
+			<xpath>config</xpath>
+			<description>This is the config file name that is used to define the application to be executed.  E.G. stat/vendor.xml</description>
+		</configName>
+		<configSource>
+			<argName>source</argName>
+			<argShortName>s</argShortName>
+			<isFlag>false</isFlag>
+			<required>false</required>
+			<multi>false</multi>
+			<xpath>source</xpath>
+			<description>If this value is present it is defining another config provider to use other than the default of S3</description>
+		</configSource>
+		<instance>
+			<argName>instance</argName>
+			<argShortName>i</argShortName>
+			<isFlag>false</isFlag>
+			<required>true</required>
+			<multi>false</multi>
+			<xpath>instance</xpath>
+			<description>The instance we are reindexing.</description>
+		</instance>
+	</args>
+</config>

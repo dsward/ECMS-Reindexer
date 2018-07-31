@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ecms-reindexer</artifactId>
+        <groupId>com.proquest.ecms.reindexer</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>Supplier</artifactId>
+    <version>${SupplierVersion}</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <mainClass>pqe.ecms.reindexer.ReindexingSupplier</mainClass>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.proquest.ecms.reindexer</groupId>
+            <artifactId>AWSUtils</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.proquest.ecms.reindexer</groupId>
+            <artifactId>Common</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.proquest.ecms.reindexer</groupId>
+            <artifactId>Config</artifactId>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.proquest.ecms</groupId>
+            <artifactId>ecms-commons</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.proquest.ecms</groupId>
+            <artifactId>ecms-config</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.proquest.ecms</groupId>
+            <artifactId>ecms-configuration</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-sqs</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>javax.persistence</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+        </dependency>
+
+    </dependencies>
+</project>
